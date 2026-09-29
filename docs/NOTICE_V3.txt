@@ -1,0 +1,56 @@
+V3 — DOUILLES ENTIEREMENT SOUS LE COUVERCLE
+PROTOTYPE MECANIQUE POUR ESSAIS MANUELS UNIQUEMENT
+
+Source : ATC_4_douilles_ressorts.scad
+piece="assemblage" : vue generale ; "coupe" : coupe de controle.
+"bloc", "plaque", "douille", "fond" : pieces individuelles ; "impression" : plateau.
+Imprimer 1 bloc, 1 couvercle (plaque.stl), 1 fond et 4 douilles.
+
+Dimensions de prototype : 180 x 44 x 63 mm assemble.
+Fond : 6 mm. Corps : 54 mm. Couvercle : 3 mm.
+Douilles au repos : dessus Z=60, contre le DESSOUS du couvercle.
+Couvercle entre Z=60 et Z=63 ; aucune douille ni ergot ne depasse.
+Course : 4 mm. En position basse, dessus de douille Z=56.
+Le couvercle arrete la remontee par une couronne autour de chaque ouverture.
+Les ergots antirotation coulissent dans le corps, sans traverser le couvercle.
+
+Ouvertures couvercle D22 mm, evasees a D23,6 mm en entree : A CONFIRMER
+avec le diametre maximal reel de l'ecrou (17 mm est la taille sur plats).
+Verifier egalement que le nez de broche peut approcher sans collision.
+L'empreinte commence 3 mm sous la surface du couvercle au repos,
+et 7 mm sous cette surface en position basse : verifier la profondeur de prise.
+Ne pas supposer que toute la hauteur de l'ecrou sera engagee.
+
+Ecrou : 17 mm sur plats, hauteur 13 mm confirmes.
+Empreinte de depart : 17,4 sur plats, profondeur 13,5 mm.
+Entraxe outils 40 mm. Douille D28, guide D28,4, collerette D32.
+Passage fraise D10 : adapter aux outils et laisser du degagement sous le fond.
+4 trous M5 D5,5 : entraxes 166 x 28 mm. Vis traversantes + rondelles/ecrous,
+longueur de serrage 63 mm hors quincaillerie et fixation machine.
+Les vis assemblent fond, corps et couvercle ; soutenir les pieces au demontage.
+
+Ressort PROVISOIRE : D ext 22, fil 2, longueur libre 33, installee 31 mm.
+Longueur a course maximale 27 mm. Ce n'est pas une reference d'achat.
+Raideur, effort, longueur a spires jointives et fatigue restent a determiner.
+Le tube central du fond centre le ressort et arrete la descente a 4 mm.
+
+Montage hors tension : inserer les douilles par le DESSOUS du corps,
+engager leurs ergots dans les rainures ; installer les ressorts sur les tubes
+du fond puis fermer fond et couvercle avec les vis traversantes.
+La collerette impose l'insertion par-dessous dans cette version.
+Un jeu axial de 0,5 mm au-dessus de la collerette assure que le couvercle
+retient la face superieure de la douille, plutot que la collerette.
+
+Impression : pieces a plat dans les positions exportees. Douilles collerette
+vers le bas. Le corps presente un surplomb interne de 2,8 mm sous son guide :
+verifier l'impression ou utiliser des supports locaux faciles a enlever.
+Verifier libre coulissement, jeux et course MANUELLEMENT.
+
+Aucune retenue de fraise desserree, detection, validation de couple ou
+sequence FluidNC n'est fournie. Ne pas effectuer de serrage motorise dans
+ce prototype imprime. Ce mecanisme n'est pas une reproduction validee
+RapidChange. Verification numerique des maillages, sans essai physique.
+
+References :
+https://github.com/xpix/XATC
+https://rapidchangeatc.com/product-category/automatic-tool-changer/
