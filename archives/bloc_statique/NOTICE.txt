@@ -1,0 +1,32 @@
+BLOC LINEAIRE 4 OUTILS — PROTOTYPE STATIQUE V1
+
+Dimensions : 180 x 40 x 30 mm. Entraxe outils : 40 mm.
+Empreintes hexagonales : 17,4 mm sur plats ; profondeur 13,5 mm.
+Entree evasee de 1 mm. Passage traversant de fraise : diametre 10 mm.
+4 fixations traversantes diametre 5,5 mm, entraxes 164 x 24 mm.
+T1 a T4 graves sur le dessus.
+
+Les valeurs 17 mm sur plats et 13 mm de hauteur d'ecrou viennent de
+l'utilisateur. Les autres dimensions sont des hypotheses modifiables.
+Le diametre maximal et la hauteur des plats de l'ecrou reel restent a mesurer.
+Une partie ronde peut empecher son introduction dans l'empreinte hexagonale.
+
+Impression : dessous a plat, sans support ; couche 0,2 mm, 4 a 6 perimetres.
+Pour essai dimensionnel uniquement. Verifier d'abord le calibre 17,4 mm.
+Ne pas forcer l'ecrou ; adapter jeu_total si necessaire.
+Prevoir un degagement sous le bloc si les outils depassent ses 30 mm de hauteur.
+La fixation au plateau de la 3018 doit etre adaptee aux rainures reelles.
+
+Ce bloc ne comprend ni ressorts, ni douilles a impact, ni retenue de fraise,
+ni controle de couple, ni detection. Ce n'est pas un ATC fonctionnel.
+Les fraises peuvent glisser dans une pince desserree : ne pas compter sur
+ces logements pour leur maintien. Tester uniquement hors tension.
+Ne pas serrer/devisser par rotation motorisee dans ce bloc imprime.
+
+OpenSCAD : ouvrir bloc_4_outils.scad, modifier les parametres, F6 puis export STL.
+Le STL fourni correspond exactement aux valeurs par defaut du source.
+La compatibilite FluidNC/BTS7960 ne change pas la fonction statique de cette piece.
+
+References d'inspiration, sans reproduction du mecanisme commercial :
+https://github.com/xpix/XATC/wiki/XATC-Carousel
+https://rapidchangeatc.com/product-category/automatic-tool-changer/
