@@ -82,7 +82,6 @@ Les scripts utilisent uniquement la bibliothèque standard Python et l'exécutab
 
 - [XATC — dépôt](https://github.com/xpix/XATC)
 - [XATC — carrousel](https://github.com/xpix/XATC/wiki/XATC-Carousel)
-- [RapidChange ATC — magasins linéaires](https://rapidchangeatc.com/shop/automatic-tool-changer/linear-magazines/)
 - [BTS7960 — documentation Infineon](https://www.infineon.com/assets/row/public/documents/10/57/infineon-bts7960-ds-en.pdf)
 - [FluidNC — dépôt officiel](https://github.com/bdring/FluidNC)
 - [OpenSCAD](https://openscad.org/)
