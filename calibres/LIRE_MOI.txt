@@ -1,0 +1,31 @@
+ATC CNC 3018 — étape 1 : ajustement de l'écrou
+
+Données confirmées : écrou 17 mm sur plats, hauteur 13 mm ; FluidNC ;
+alimentation broche 24 V ; module BTS7960 annoncé par l'utilisateur.
+La compatibilité complète du moteur, des sorties et du firmware reste à vérifier.
+
+Ces trois bagues sont des CALIBRES STATIQUES, pas un changeur automatique.
+Elles ne reproduisent pas le mécanisme de serrage RapidChange.
+Ouvertures sur plats : 17,2 / 17,4 / 17,6 mm. Hauteur 6 mm, diamètre extérieur 30 mm.
+Le jeu indiqué dans le source est total, et non par face.
+
+Imprimer à plat, sans supports, couche 0,2 mm, 4 périmètres.
+Tester moteur hors tension, de préférence écrou démonté, sans effort ni rotation motorisée.
+Les gravures identifient chaque ouverture. Choisir la plus petite qui entre librement.
+Si aucune ne passe, ne pas forcer : mesurer le diamètre de la partie ronde
+et la hauteur réelle des méplats. Un écrou à plats partiels ne correspond pas
+nécessairement à une empreinte hexagonale traversante.
+
+À communiquer pour la suite : calibre retenu, diamètre maximal de l'écrou,
+hauteur des méplats, place disponible et fixation du magasin, config.yaml FluidNC.
+Le magasin 4 postes est une proposition ; les logements à ressort, la transmission
+du couple, la retenue des outils et la détection ne sont pas encore définis.
+Aucun G-code de changement ni câblage GPIO n'est fourni à ce stade.
+
+OpenSCAD : ouvrir calibre_ecrou17.scad ; selection=-1 affiche les 3 pièces.
+selection=0, 1 ou 2 sélectionne une pièce ; F6 puis exporter en STL.
+
+Références :
+https://github.com/xpix/XATC/wiki/XATC-Carousel
+https://rapidchangeatc.com/shop/automatic-tool-changer/linear-magazines/
+https://www.infineon.com/assets/row/public/documents/10/57/infineon-bts7960-ds-en.pdf
